@@ -1,0 +1,1269 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+    <head>
+        <!-- Meta Tags -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="keywords" content="Site keywords here">
+		<meta name="description" content="">
+		<meta name='copyright' content=''>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!-- Title -->
+        <title>UFIAS Water Department</title>
+		
+		<!-- Favicon -->
+        <link rel="icon" href="img/UF1.png">
+		
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap" rel="stylesheet">
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<!-- Nice Select CSS -->
+		<link rel="stylesheet" href="css/nice-select.css">
+		<!-- Font Awesome CSS -->
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+		<!-- icofont CSS -->
+        <link rel="stylesheet" href="css/icofont.css">
+		<!-- Slicknav -->
+		<link rel="stylesheet" href="css/slicknav.min.css">
+		<!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="css/owl-carousel.css">
+		<!-- Datepicker CSS -->
+		<link rel="stylesheet" href="css/datepicker.css">
+		<!-- Animate CSS -->
+        <link rel="stylesheet" href="css/animate.min.css">
+		<!-- Magnific Popup CSS -->
+        <link rel="stylesheet" href="css/magnific-popup.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+		<!-- Medipro CSS -->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/responsive.css">
+
+		<style>
+			.header-inner {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				padding: 5px 20px;
+				background-color: #f8f9fa;
+			}
+			.logo {
+				flex: 1;
+			}
+			.main-menu {
+				flex: 2;
+				text-align: right;
+			}
+			.main-menu ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				display: flex;
+				justify-content: flex-end;
+			}
+			.main-menu ul li {
+				margin-left: 20px;
+			}
+			.main-menu ul li a {
+				text-decoration: none;
+				color: #000;
+				padding: 10px 0;
+				display: block;
+			}
+			.dropdown {
+				display: none;
+				position: absolute;
+				background-color: #fff;
+				box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+				z-index: 1;
+			}
+			.dropdown-item {
+				padding: 10px;
+				display: block;
+				color: #000;
+			}
+			.dropdown-item:hover {
+				background-color: #f1f1f1;
+			}
+			.nav li:hover .dropdown {
+				display: block;
+			}
+
+
+			
+			.services {
+            padding: 60px 0;
+        }
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .section-title h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        .section-title img {
+            margin: 10px 0;
+        }
+        .section-title p {
+            font-size: 16px;
+            color: #777;
+        }
+        .single-service {
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+        .single-service::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 123, 255, 0.1);
+            z-index: -1;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+        .single-service:hover::before {
+            opacity: 1;
+        }
+        .single-service:hover {
+            transform: translateY(-10px); /* Hover effect */
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+        }
+        .single-service i {
+            font-size: 40px;
+            color: #007bff;
+            margin-bottom: 15px;
+            transition: color 0.3s;
+        }
+        .single-service h4 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #333;
+            transition: color 0.3s;
+        }
+        .single-service p {
+            font-size: 14px;
+            color: #777;
+        }
+        .single-service a {
+            text-decoration: none;
+            color: inherit; /* Remove underline and keep text color */
+        }
+        .single-service:hover i,
+        .single-service:hover h4 {
+            color: #0056b3;
+        }
+
+
+		.single-news {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin-bottom: 30px; /* Added margin to create space between rows */
+        }
+        .single-news:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        .news-head img {
+            width: 100%;
+            height: auto;
+        }
+        .news-body {
+            padding: 20px;
+        }
+        .news-content .date {
+            color: #999;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .news-content h2 {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .news-content p.text {
+            color: #555;
+        }
+
+
+
+		</style>
+
+		
+    </head>
+    <body>
+	
+		<!-- Preloader -->
+        <div class="preloader">
+            <div class="loader">
+                <div class="loader-outter"></div>
+                <div class="loader-inner"></div>
+				<!--
+                <div class="indicator"> 
+                    <svg width="16px" height="12px">
+                        <polyline id="back" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                        <polyline id="front" points="1 6 4 6 6 11 10 1 12 6 15 6"></polyline>
+                    </svg>
+                </div>
+				-->
+            </div>
+        </div>
+        <!-- End Preloader -->
+		
+		<!-- Header Area -->
+		<header class="header" >
+			
+			<!-- Header Inner -->
+			<div class="header-inner">
+				<div class="logo">
+					<a href="index.html"><img src="img/UFIFASLogo.png" alt="#" style="width: 250px; height: 35px;"></a>
+				</div>
+				<div class="main-menu" style="text-align: left;">
+					<nav class="navigation">
+						<ul class="nav menu">
+							<li class="active"><a href="index.html">Home</a></li>
+							<li><a href="Doctos.html">About</a></li>
+							<li><a href="Services.html">Data & Information</a></li>
+							<li><a href="#">More <i class="icofont-rounded-down"></i></a>
+								<ul class="dropdown">
+									<li><a href="feature.html" class="dropdown-item">Research</a></li>
+									<li><a href="team.html" class="dropdown-item">People</a></li>
+									<li><a href="appointment.html" class="dropdown-item">News</a></li>
+									<li><a href="testimonial.html" class="dropdown-item">Publications</a></li>
+									<li><a href="extension.html" class="dropdown-item">Extension</a></li>
+								</ul>
+							</li>
+							<li><a href="contact.html">Contact Us</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<!--/ End Header Inner -->
+		</header>
+		<!-- End Header Area -->
+		
+		<!-- Slider Area -->
+		<section class="slider">
+			<div class="hero-slider">
+				<!-- Start Single Slider -->
+				<div class="single-slider" style="background-image:url('img/I1.jpeg')">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7">
+								<div class="text">
+									<h1 style="color:white;">xsadfrx sksikiks <span>ikdfdfjdfj</span> cfhdjsf hdiouf hdsiou fhxnc <span>Tcbdsjcdc.</span></h1>
+									<p style="color:white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque, faucibus libero eu, gravida quam. </p>
+									<!-- <div class="button">
+										<a href="#" class="btn">Get Appointment</a>
+										<a href="#" class="btn primary">Learn More</a>
+									</div> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Single Slider -->
+				<!-- Start Single Slider -->
+				<div class="single-slider" style="background-image:url('img/I2.jpeg')">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7">
+								<div class="text">
+									<h1 style="color:white;">xfgerx sksikiks <span>ikdfdfjdfj</span> cfhdjsf hdiouf hdsiou fhxnc <span>Tcbdsjcdc.</span></h1>
+									<p style="color:white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque, faucibus libero eu, gravida quam. </p>
+									<!-- <div class="button">
+										<a href="#" class="btn">Get Appointment</a>
+										<a href="#" class="btn primary">Learn More</a>
+									</div> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Start End Slider -->
+				<!-- Start Single Slider -->
+				<div class="single-slider" style="background-image:url('img/I3.jpeg')">
+					<div class="container">
+						<div class="row">
+							<div class="col-lg-7">
+								<div class="text">
+									<h1 style="color:white;">xdsfdfsx sksikiks <span>ikdfdfjdfj</span> cfhdjsf hdiouf hdsiou fhxnc <span>Tcbdsjcdc.</span></h1>
+									<p style="color:white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque, faucibus libero eu, gravida quam. </p>
+									<!-- <div class="button">
+										<a href="#" class="btn">Get Appointment</a>
+										<a href="#" class="btn primary">Learn More</a>
+									</div> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End Single Slider -->
+			</div>
+		</section>
+		<!--/ End Slider Area -->
+		
+		<!-- Start Schedule Area -->
+
+		<!-- <section class="schedule">
+			<div class="container">
+				<div class="schedule-inner">
+					<div class="row">
+						<div class="col-lg-4 col-md-6 col-12 ">
+						
+							<div class="single-schedule first">
+								<div class="inner">
+									<div class="icon">
+										<i class="fa fa-ambulance"></i>
+									</div>
+									<div class="single-content">
+										<span>Lorem Amet</span>
+										<h4>Emergency Cases</h4>
+										<p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p>
+										<a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-12">
+							
+							<div class="single-schedule middle">
+								<div class="inner">
+									<div class="icon">
+										<i class="icofont-prescription"></i>
+									</div>
+									<div class="single-content">
+										<span>Fusce Porttitor</span>
+										<h4>Doctors Timetable</h4>
+										<p>Lorem ipsum sit amet consectetur adipiscing elit. Vivamus et erat in lacus convallis sodales.</p>
+										<a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-12 col-12">
+							
+							<div class="single-schedule last">
+								<div class="inner">
+									<div class="icon">
+										<i class="icofont-ui-clock"></i>
+									</div>
+									<div class="single-content">
+										<span>Donec luctus</span>
+										<h4>Opening Hours</h4>
+										<ul class="time-sidual">
+											<li class="day">Monday - Fridayp <span>8.00-20.00</span></li>
+											<li class="day">Saturday <span>9.00-18.30</span></li>
+											<li class="day">Monday - Thusday <span>9.00-15.00</span></li>
+										</ul>
+										<a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section> -->
+		<!--/End Start schedule Area -->
+
+		<!-- Start Feautes -->
+		<!-- <section class="Feautes section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2>We Are Always Ready to Help You & Your Family</h2>
+							<img src="img/section-img.png" alt="#">
+							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-12">
+						
+						<div class="single-features">
+							<div class="signle-icon">
+								<i class="icofont icofont-ambulance-cross"></i>
+							</div>
+							<h3>Emergency Help</h3>
+							<p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+						</div>
+					
+					</div>
+					<div class="col-lg-4 col-12">
+						
+						<div class="single-features">
+							<div class="signle-icon">
+								<i class="icofont icofont-medical-sign-alt"></i>
+							</div>
+							<h3>Enriched Pharmecy</h3>
+							<p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+						</div>
+						
+					</div>
+					<div class="col-lg-4 col-12">
+						
+						<div class="single-features last">
+							<div class="signle-icon">
+								<i class="icofont icofont-stethoscope"></i>
+							</div>
+							<h3>Medical Treatment</h3>
+							<p>Lorem ipsum sit, consectetur adipiscing elit. Maecenas mi quam vulputate.</p>
+						</div>
+					
+					</div>
+				</div>
+			</div>
+		</section> -->
+		<!--/ End Feautes -->
+		
+		<!-- Start Fun-facts -->
+		
+		
+		
+		<!--
+		<div id="fun-facts" class="fun-facts section overlay">
+			<div class="container">
+				<div class="row">-->
+
+
+
+
+
+
+					<!-- <div class="col-lg-3 col-md-6 col-12">
+						
+						<div class="single-fun">
+							<i class="icofont icofont-home"></i>
+							<div class="content">
+								<span class="counter">3468</span>
+								<p>Hospital Rooms</p>
+							</div>
+						</div>
+						
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						
+						<div class="single-fun">
+							<i class="icofont icofont-user-alt-3"></i>
+							<div class="content">
+								<span class="counter">557</span>
+								<p>Specialist Doctors</p>
+							</div>
+						</div>
+						
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						
+						<div class="single-fun">
+							<i class="icofont-simple-smile"></i>
+							<div class="content">
+								<span class="counter">4379</span>
+								<p>Happy Patients</p>
+							</div>
+						</div>
+					
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						
+						<div class="single-fun">
+							<i class="icofont icofont-table"></i>
+							<div class="content">
+								<span class="counter">32</span>
+								<p>Years of Experience</p>
+							</div>
+						</div>
+						
+					</div> -->
+
+
+
+
+					<!--
+				</div>
+			</div>
+		</div>-->
+
+
+
+
+
+
+
+		<!--/ End Fun-facts -->
+		
+		<!-- Start Why choose -->
+		<section class="why-choose section" >
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2>About Us</h2>
+					
+							<p>Scfhdasiofc nkodhcvviou jnjudgh njdfijf ladsofj lodifowfj as dkfjsx slsl.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 col-12">
+						<!-- Start Choose Left -->
+						<div class="choose-left">
+							<h3>Who We Are</h3>
+							<p>Karen ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra antege vel est lobortis, a commodo magna rhoncus. In quis nisi non emet quam pharetra commodo. </p>
+							<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+							<div class="row">
+								<div class="col-lg-6">
+									<ul class="list">
+										<li><i class="fa fa-caret-right"></i>Maecenas vitae luctus nibh. </li>
+										<li><i class="fa fa-caret-right"></i>Duis massa massa.</li>
+										<li><i class="fa fa-caret-right"></i>Aliquam feugiat interdum.</li>
+									</ul>
+								</div>
+								<div class="col-lg-6">
+									<ul class="list">
+										<li><i class="fa fa-caret-right"></i>Maecenas vitae luctus nibh. </li>
+										<li><i class="fa fa-caret-right"></i>Duis massa massa.</li>
+										<li><i class="fa fa-caret-right"></i>Aliquam feugiat interdum.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- End Choose Left -->
+					</div>
+					<div class="col-lg-6 col-12">
+						<!-- Start Choose Rights -->
+						<div class="choose-right">
+							<div class="video-image">
+								<!-- Video Animation -->
+								<div class="promo-video">
+									<div class="waves-block">
+										<div class="waves wave-1"></div>
+										<div class="waves wave-2"></div>
+										<div class="waves wave-3"></div>
+									</div>
+								</div>
+								<!--/ End Video Animation -->
+								<a href="https://www.youtube.com/watch?v=k_jgyQsnFFg" class="video video-popup mfp-iframe"><i class="fa fa-play"></i></a>
+							</div>
+						</div>
+						<!-- End Choose Rights -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End Why choose -->
+		
+
+
+		<!-- Start portfolio -->
+		<section class="portfolio section" >
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2>Some of our Recent Publications are</h2>
+							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-12 col-12">
+						<div class="owl-carousel portfolio-slider">
+							<div class="single-pf">
+								<img src="img/I2.jpeg" alt="#">
+								<a href="testimonial.html" class="btn">View Details</a>
+							</div>
+							<div class="single-pf">
+								<img src="img/I3.jpeg" alt="#">
+								<a href="testimonial.html" class="btn">View Details</a>
+							</div>
+							<div class="single-pf">
+								<img src="img/I2.jpeg" alt="#">
+								<a href="testimonial.html" class="btn">View Details</a>
+							</div>
+							<div class="single-pf">
+								<img src="img/I3.jpeg" alt="#">
+								<a href="testimonial.html" class="btn">View Details</a>
+							</div>
+							<div class="single-pf">
+								<img src="img/I2.jpeg" alt="#">
+								<a href="testimonial.html" class="btn">View Details</a>
+							</div>
+							<div class="single-pf">
+								<img src="img/I3.jpeg" alt="#">
+								<a href="testimonial.html" class="btn">View Details</a>
+							</div>
+							<div class="single-pf">
+								<img src="img/I2.jpeg" alt="#">
+								<a href="testimonial.html" class="btn">View Details</a>
+							</div>
+							<div class="single-pf">
+								<img src="img/I3.jpeg" alt="#">
+								<a href="testimonial.html" class="btn">View Details</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--/ End portfolio -->
+		
+ <!-- Service Start -->
+    
+ <section class="services section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h2>We Hcdhsf Gsjndkdfdksf Jsldkos Kaie.</h2>
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+                <!-- Start Single Service -->
+                <a href="Services.html">
+                    <div class="single-service">
+                        
+                        <h4>Data & Information 1</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>  
+                    </div>
+                </a>
+                <!-- End Single Service -->
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <!-- Start Single Service -->
+                <a href="Services.html">
+                    <div class="single-service">
+                        
+                        <h4>Data & Information 2</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>  
+                    </div>
+                </a>
+                <!-- End Single Service -->
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <!-- Start Single Service -->
+                <a href="Services.html">
+                    <div class="single-service">
+                        
+                        <h4>Data & Information 3</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>  
+                    </div>
+                </a>
+                <!-- End Single Service -->
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <!-- Start Single Service -->
+                <a href="Services.html">
+                    <div class="single-service">
+                        
+                        <h4>Data & Information 4</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>  
+                    </div>
+                </a>
+                <!-- End Single Service -->
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <!-- Start Single Service -->
+                <a href="Services.html">
+                    <div class="single-service">
+                        
+                        <h4>Data & Information 5</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>  
+                    </div>
+                </a>
+                <!-- End Single Service -->
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <!-- Start Single Service -->
+                <a href="Services.html">
+                    <div class="single-service">
+                        
+                        <h4>Data & Information 6</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus dictum eros ut imperdiet. </p>  
+                    </div>
+                </a>
+                <!-- End Single Service -->
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+		<!-- Pricing Table -->
+		<section class="pricing-table section">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2>Some of our Advanced Research are</h2>
+						
+							<p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<!-- Single Table -->
+					<div class="col-lg-4 col-md-12 col-12">
+						<div class="single-table">
+							<!-- Table Head -->
+							<div class="table-head">
+								<!-- <div class="icon">
+									<i class="icofont icofont-ui-cut"></i>
+								</div> -->
+								<h4 class="title">Research Area 1</h4>
+								<br>
+								<p> cnjdfhdn ncjidfh ndjshnfiuh nhioufh nasbnsd kasiorfjkadsnfmsc cjadsh mcbnbajsb ansbndkjad kjdfhi ajwhe ashf akshhirja jfhejf</p>
+								<!-- <div class="price">
+									<p class="amount">$199<span>/ Per Visit</span></p>
+								</div>	 -->
+							</div>
+							
+							<div class="table-bottom">
+								<a class="btn" href="#">View More</a>
+							</div>
+							<!-- Table Bottom -->
+						</div>
+					</div>
+					<!-- End Single Table-->
+					<!-- Single Table -->
+					<div class="col-lg-4 col-md-12 col-12">
+						<div class="single-table">
+							<!-- Table Head -->
+							<div class="table-head">
+								<!-- <div class="icon">
+									<i class="icofont icofont-ui-cut"></i>
+								</div> -->
+								<h4 class="title">Research Area 2</h4>
+								<br>
+								<p> cnjdfhdn ncjidfh ndjshnfiuh nhioufh nasbnsd kasiorfjkadsnfmsc cjadsh mcbnbajsb ansbndkjad kjdfhi ajwhe ashf akshhirja jfhejf</p>
+								<!-- <div class="price">
+									<p class="amount">$199<span>/ Per Visit</span></p>
+								</div>	 -->
+							</div>
+							
+							<div class="table-bottom">
+								<a class="btn" href="#">View More</a>
+							</div>
+							<!-- Table Bottom -->
+						</div>
+					</div>
+					<!-- End Single Table-->
+					<!-- Single Table -->
+					<div class="col-lg-4 col-md-12 col-12">
+						<div class="single-table">
+							<!-- Table Head -->
+							<div class="table-head">
+								<!-- <div class="icon">
+									<i class="icofont icofont-ui-cut"></i>
+								</div> -->
+								<h4 class="title">Research Area 3</h4>
+								<br>
+								<p> cnjdfhdn ncjidfh ndjshnfiuh nhioufh nasbnsd kasiorfjkadsnfmsc cjadsh mcbnbajsb ansbndkjad kjdfhi ajwhe ashf akshhirja jfhejf</p>
+								<!-- <div class="price">
+									<p class="amount">$199<span>/ Per Visit</span></p>
+								</div>	 -->
+							</div>
+							
+							<div class="table-bottom">
+								<a class="btn" href="#">View More</a>
+							</div>
+							<!-- Table Bottom -->
+						</div>
+					</div>
+					<!-- End Single Table-->
+
+					<!-- Single Table -->
+					<div class="col-lg-4 col-md-12 col-12">
+						<div class="single-table">
+							<!-- Table Head -->
+							<div class="table-head">
+								<!-- <div class="icon">
+									<i class="icofont icofont-ui-cut"></i>
+								</div> -->
+								<h4 class="title">Research Area 4</h4>
+								<br>
+								<p> cnjdfhdn ncjidfh ndjshnfiuh nhioufh nasbnsd kasiorfjkadsnfmsc cjadsh mcbnbajsb ansbndkjad kjdfhi ajwhe ashf akshhirja jfhejf</p>
+								<!-- <div class="price">
+									<p class="amount">$199<span>/ Per Visit</span></p>
+								</div>	 -->
+							</div>
+							
+							<div class="table-bottom">
+								<a class="btn" href="#">View More</a>
+							</div>
+							<!-- Table Bottom -->
+						</div>
+					</div>
+					<!-- End Single Table-->
+
+					<!-- Single Table -->
+					<div class="col-lg-4 col-md-12 col-12">
+						<div class="single-table">
+							<!-- Table Head -->
+							<div class="table-head">
+								<!-- <div class="icon">
+									<i class="icofont icofont-ui-cut"></i>
+								</div> -->
+								<h4 class="title">Research Area 5</h4>
+								<br>
+								<p> cnjdfhdn ncjidfh ndjshnfiuh nhioufh nasbnsd kasiorfjkadsnfmsc cjadsh mcbnbajsb ansbndkjad kjdfhi ajwhe ashf akshhirja jfhejf</p>
+								<!-- <div class="price">
+									<p class="amount">$199<span>/ Per Visit</span></p>
+								</div>	 -->
+							</div>
+							
+							<div class="table-bottom">
+								<a class="btn" href="#">View More</a>
+							</div>
+							<!-- Table Bottom -->
+						</div>
+					</div>
+					<!-- End Single Table-->
+
+					<!-- Single Table -->
+					<div class="col-lg-4 col-md-12 col-12">
+						<div class="single-table">
+							<!-- Table Head -->
+							<div class="table-head">
+								<!-- <div class="icon">
+									<i class="icofont icofont-ui-cut"></i>
+								</div> -->
+								<h4 class="title">Research Area 6</h4>
+								<br>
+								<p> cnjdfhdn ncjidfh ndjshnfiuh nhioufh nasbnsd kasiorfjkadsnfmsc cjadsh mcbnbajsb ansbndkjad kjdfhi ajwhe ashf akshhirja jfhejf</p>
+								<!-- <div class="price">
+									<p class="amount">$199<span>/ Per Visit</span></p>
+								</div>	 -->
+							</div>
+							
+							<div class="table-bottom">
+								<a class="btn" href="#">View More</a>
+							</div>
+							<!-- Table Bottom -->
+						</div>
+					</div>
+					<!-- End Single Table-->
+				</div>	
+			</div>	
+		</section>	
+		<!--/ End Pricing Table -->
+		
+		
+		
+		<section class="blog section" id="blog">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="section-title">
+							<h2>Keep up with Our Most Recent Hydrology News.</h2>
+							<p>fdhfud kjcioadhhfioa jiaojfoiadshfiouadsfh jjoashfiouahsfioasudaishjadjcfh</p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Single Blog -->
+						<div class="single-news">
+							<div class="news-head">
+								<img src="img/I3.jpeg" alt="#">
+							</div>
+							<div class="news-body">
+								<div class="news-content">
+									<div class="date">22 Aug, 2020</div>
+									<h2><a href="appointment.html">We have recently published a paper.</a></h2>
+									<p class="text">dfhds nnjddchioadfh jsjhdf lloafoad adsfjadifjadf adsfhjadifhjad dfdasfdff.</p>
+								</div>
+							</div>
+						</div>
+						<!-- End Single Blog -->
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Single Blog -->
+						<div class="single-news">
+							<div class="news-head">
+								<img src="img/I3.jpeg" alt="#">
+							</div>
+							<div class="news-body">
+								<div class="news-content">
+									<div class="date">15 Jul, 2020</div>
+									<h2><a href="appointment.html">Top five models for temperatures.</a></h2>
+									<p class="text">dfhds nnjddchioadfh jsjhdf lloafoad adsfjadifjadf adsfhjadifhjad dfdasfdff.</p>
+								</div>
+							</div>
+						</div>
+						<!-- End Single Blog -->
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Single Blog -->
+						<div class="single-news">
+							<div class="news-head">
+								<img src="img/I2.jpeg" alt="#">
+							</div>
+							<div class="news-body">
+								<div class="news-content">
+									<div class="date">05 Jan, 2020</div>
+									<h2><a href="appointment.html">Understanding NHITS</a></h2>
+									<p class="text">dfhds nnjddchioadfh jsjhdf lloafoad adsfjadifjadf adsfhjadifhjad dfdasfdff dfjdsisfjd sdfhdiofh ksdjfiodjf.</p>
+								</div>
+							</div>
+						</div>
+						<!-- End Single Blog -->
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Single Blog -->
+						<div class="single-news">
+							<div class="news-head">
+								<img src="img/I2.jpeg" alt="#">
+							</div>
+							<div class="news-body">
+								<div class="news-content">
+									<div class="date">05 Jan, 2020</div>
+									<h2><a href="appointment.html">Understanding NHITS</a></h2>
+									<p class="text">dfhds nnjddchioadfh jsjhdf lloafoad adsfjadifjadf adsfhjadifhjad dfdasfdff dfjdsisfjd sdfhdiofh ksdjfiodjf.</p>
+								</div>
+							</div>
+						</div>
+						<!-- End Single Blog -->
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Single Blog -->
+						<div class="single-news">
+							<div class="news-head">
+								<img src="img/I2.jpeg" alt="#">
+							</div>
+							<div class="news-body">
+								<div class="news-content">
+									<div class="date">05 Jan, 2020</div>
+									<h2><a href="appointment.html">Understanding NHITS</a></h2>
+									<p class="text">dfhds nnjddchioadfh jsjhdf lloafoad adsfjadifjadf adsfhjadifhjad dfdasfdff dfjdsisfjd sdfhdiofh ksdjfiodjf.</p>
+								</div>
+							</div>
+						</div>
+						<!-- End Single Blog -->
+					</div>
+					<div class="col-lg-4 col-md-6 col-12">
+						<!-- Single Blog -->
+						<div class="single-news">
+							<div class="news-head">
+								<img src="img/I3.jpeg" alt="#">
+							</div>
+							<div class="news-body">
+								<div class="news-content">
+									<div class="date">05 Jan, 2020</div>
+									<h2><a href="appointment.html">Understanding NHITS</a></h2>
+									<p class="text">dfhds nnjddchioadfh jsjhdf lloafoad adsfjadifjadf adsfhjadifhjad dfdasfdff dfjdsisfjd sdfhdiofh ksdjfiodjf.</p>
+								</div>
+							</div>
+						</div>
+						<!-- End Single Blog -->
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		
+		<!-- Start Fun-facts -->
+		<div id="fun-facts" class="fun-facts section overlay">
+			<div class="container">
+				<div class="row">
+					<!-- <div class="col-lg-3 col-md-6 col-12">
+						
+						<div class="single-fun">
+							<i class="icofont icofont-home"></i>
+							<div class="content">
+								<span class="counter">3468</span>
+								<p>Hospital Rooms</p>
+							</div>
+						</div>
+						
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						
+						<div class="single-fun">
+							<i class="icofont icofont-user-alt-3"></i>
+							<div class="content">
+								<span class="counter">557</span>
+								<p>Specialist Doctors</p>
+							</div>
+						</div>
+						
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						
+						<div class="single-fun">
+							<i class="icofont-simple-smile"></i>
+							<div class="content">
+								<span class="counter">4379</span>
+								<p>Happy Patients</p>
+							</div>
+						</div>
+					
+					</div>
+					<div class="col-lg-3 col-md-6 col-12">
+						
+						<div class="single-fun">
+							<i class="icofont icofont-table"></i>
+							<div class="content">
+								<span class="counter">32</span>
+								<p>Years of Experience</p>
+							</div>
+						</div>
+						
+					</div> -->
+				</div>
+			</div>
+		</div>
+		<!--/ End Fun-facts -->
+		
+				<!-- Start Contact Us -->
+				<section class="contact-us section">
+					<div class="container">
+						<div class="inner">
+							<div class="row"> 
+								<div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+									<div class="h-100" style="min-height: 400px;">
+										<iframe class="rounded w-100 h-100"
+										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+										frameborder="0" allowfullscreen="" aria-hidden="false"
+										tabindex="0"></iframe>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="contact-us-form">
+										<h2>Contact With Us</h2>
+										<p>If you have any questions please fell free to contact with us.</p>
+										<!-- Form -->
+										<form class="form" method="post" action="mail/mail.php">
+											<div class="row">
+												<div class="col-lg-6">
+													<div class="form-group">
+														<input type="text" name="name" placeholder="Name" required="">
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="form-group">
+														<input type="email" name="email" placeholder="Email" required="">
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="form-group">
+														<input type="text" name="phone" placeholder="Phone" required="">
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="form-group">
+														<input type="text" name="subject" placeholder="Subject" required="">
+													</div>
+												</div>
+												<div class="col-lg-12">
+													<div class="form-group">
+														<textarea name="message" placeholder="Your Message" required=""></textarea>
+													</div>
+												</div>
+												<div class="col-12">
+													<div class="form-group login-btn">
+														<button class="btn" type="submit">Send</button>
+													</div>
+													<div class="checkbox">
+														<label class="checkbox-inline" for="2"><input name="news" id="2" type="checkbox">Do you want to subscribe our Newsletter ?</label>
+													</div>
+												</div>
+											</div>
+										</form>
+										<!--/ End Form -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="contact-info">
+							<div class="row">
+								<!-- single-info -->
+								<div class="col-lg-4 col-12 ">
+									<div class="single-info">
+										<i class="icofont icofont-ui-call"></i>
+										<div class="content">
+											<h3>+(000) 1234 56789</h3>
+											<p>onahydrology@ufl.edu</p>
+										</div>
+									</div>
+								</div>
+								<!--/End single-info -->
+								<!-- single-info -->
+								<div class="col-lg-4 col-12 ">
+									<div class="single-info">
+										<i class="icofont-google-map"></i>
+										<div class="content">
+											<h3>3401 Experiment Station</h3>
+											<p>Ona, FL, 32608</p>
+										</div>
+									</div>
+								</div>
+								<!--/End single-info -->
+								<!-- single-info -->
+								<div class="col-lg-4 col-12 ">
+									<div class="single-info">
+										<i class="icofont icofont-wall-clock"></i>
+										<div class="content">
+											<h3>Mon - Fri: 8am - 5pm</h3>
+											<p></p>
+										</div>
+									</div>
+								</div>
+								<!--/End single-info -->
+							</div>
+						</div>
+					</div>
+				</section>
+				<!--/ End Contact Us -->
+		
+		
+		
+
+	<!-- Footer Area -->
+    <footer id="footer" class="footer ">
+        <!-- Footer Top -->
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="single-footer">
+                            <h2>About Us</h2>
+                            <p>dfhds nnjddchioadfh jsjhdf lloafoad adsfjadifjadf adsfhjadifhjad dfdasfdff dfjdsisfjd sdfhdiofh ksdjfiodjf.</p>
+                            <!-- Social -->
+                            <ul class="social">
+                                <li><a href="#"><i class="icofont-facebook"></i></a></li>
+                                <li><a href="#"><i class="icofont-google-plus"></i></a></li>
+                                <li><a href="#"><i class="icofont-twitter"></i></a></li>
+                                <li><a href="#"><i class="icofont-vimeo"></i></a></li>
+                                <li><a href="#"><i class="icofont-pinterest"></i></a></li>
+                            </ul>
+                            <!-- End Social -->
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="single-footer f-link">
+                            <h2>Quick Links</h2>
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <ul>
+                                        <li><a href="index.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
+                                        <li><a href="Doctos.html"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
+                                        <li><a href="Services.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Data & Info</a></li>
+                                        <li><a href="feature.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Research</a></li>
+                                        <li><a href="team.html"><i class="fa fa-caret-right" aria-hidden="true"></i>People</a></li>	
+                                    </ul>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <ul>
+                                        <li><a href="appointment.html"><i class="fa fa-caret-right" aria-hidden="true"></i>News</a></li>
+                                        <li><a href="testimonial.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Publications</a></li>
+                                        <li><a href="extension.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Extension</a></li>
+                                        <li><a href="contact.html"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a></li>	
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="single-footer">
+                            <h2>Open Hours</h2>
+                            <p>dfhds nnjddchioadfh jsjhdf lloafoad adsfjadifjadf adsfhjadifhjad dfdasfdff dfjdsisfjd sdfhdiofh ksdjfiodjf.</p>
+                            <ul class="time-sidual">
+                                <li class="day">Monday - Friday <span>8.00-17.00</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="single-footer">
+                            <h2>Newsletter</h2>
+                            <p>subscribe to our newsletter to get allour news in your inbox.. Lorem ipsum dolor sit amet, consectetur adipisicing elit,</p>
+                            <form action="mail/mail.php" method="get" target="_blank" class="newsletter-inner">
+                                <input name="email" placeholder="Email Address" class="common-input" onfocus="this.placeholder = ''"
+                                    onblur="this.placeholder = 'Your email address'" required="" type="email">
+                                <button class="button"><i class="icofont icofont-paper-plane"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/ End Footer Top -->
+
+    </footer>
+    <!--/ End Footer Area -->
+
+		
+		<!-- jquery Min JS -->
+        <script src="js/jquery.min.js"></script>
+		<!-- jquery Migrate JS -->
+		<script src="js/jquery-migrate-3.0.0.js"></script>
+		<!-- jquery Ui JS -->
+		<script src="js/jquery-ui.min.js"></script>
+		<!-- Easing JS -->
+        <script src="js/easing.js"></script>
+		<!-- Color JS -->
+		<script src="js/colors.js"></script>
+		<!-- Popper JS -->
+		<script src="js/popper.min.js"></script>
+		<!-- Bootstrap Datepicker JS -->
+		<script src="js/bootstrap-datepicker.js"></script>
+		<!-- Jquery Nav JS -->
+        <script src="js/jquery.nav.js"></script>
+		<!-- Slicknav JS -->
+		<script src="js/slicknav.min.js"></script>
+		<!-- ScrollUp JS -->
+        <script src="js/jquery.scrollUp.min.js"></script>
+		<!-- Niceselect JS -->
+		<script src="js/niceselect.js"></script>
+		<!-- Tilt Jquery JS -->
+		<script src="js/tilt.jquery.min.js"></script>
+		<!-- Owl Carousel JS -->
+        <script src="js/owl-carousel.js"></script>
+		<!-- counterup JS -->
+		<script src="js/jquery.counterup.min.js"></script>
+		<!-- Steller JS -->
+		<script src="js/steller.js"></script>
+		<!-- Wow JS -->
+		<script src="js/wow.min.js"></script>
+		<!-- Magnific Popup JS -->
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<!-- Counter Up CDN JS -->
+		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+		<!-- Bootstrap JS -->
+		<script src="js/bootstrap.min.js"></script>
+		<!-- Main JS -->
+		<script src="js/main.js"></script>
+    </body>
+</html>
